@@ -405,10 +405,8 @@ if(Count_FF>0)
     sum1=sum1+wait_FF[i];
     sum2=sum2+turn_FF[i];
    }
-   sum1=(sum1)/(Count_FF);
-   sum2=(sum2)/(Count_FF);
-   printf("Average WAITING TIME : %f\n",sum1);
-   printf("Average ARRIVAL TIME : %f",sum2);
+   printf("Average WAITING TIME : %f\n",(sum1)/(Count_FF));
+   printf("Average ARRIVAL TIME : %f",(sum2)/(Count_FF));
 }
 if(Count_PR>0)
 {
@@ -421,10 +419,8 @@ if(Count_PR>0)
     sum3=sum3+wait_PQ[i];
     sum4=sum4+turn_PQ[i];
   }
-  sum3=(sum3)/(Count_PR);
-  sum4=(sum4)/(Count_PR);
-  printf("Average WAITING TIME : %f\n",sum1);
-  printf("Average ARRIVAL TIME : %f",sum2);
+  printf("Average WAITING TIME : %f\n",(sum3)/(Count_PR));
+  printf("Average ARRIVAL TIME : %f",(sum4)/(Count_PR));
 }
 if(Count_RR>0)
 {
@@ -437,14 +433,12 @@ if(Count_RR>0)
 	 sum5=sum5+wait_RR[i];
      sum6=sum6+turn_RR[i];
    }
-   sum5=(sum5)/(Count_RR);
-   sum6=(sum6)/(Count_RR);
-   printf("Average WAITING TIME : %f\n",sum1);
-   printf("Average ARRIVAL TIME : %f\n",sum2);
+   printf("Average WAITING TIME : %f\n",(sum5)/(Count_RR));
+   printf("Average ARRIVAL TIME : %f\n",(sum6)/(Count_RR));
 }
 printf("\n\n\n");
 printf("AVERAGE WAITING TIME AND TURNAROUND TIME OF EACH PROCESS OUTSIDE ALL QUEUES\n");
-printf("WAITING TIME : %f\n",((sum1+sum3+sum5)/3));
-printf("TURNAROUND TIME : %f\n",((sum2+sum4+sum6)/3));
+printf("WAITING TIME : %f\n",((sum1+sum3+sum5)/(Count_RR+Count_FF+count_PR));
+printf("TURNAROUND TIME : %f\n",((sum2+sum4+sum6)/(Count_RR+Count_FF+count_PR));
 exit(0);
 }
