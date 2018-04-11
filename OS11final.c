@@ -438,7 +438,7 @@ if(Count_RR>0)
 }
 printf("\n\n\n");
 printf("AVERAGE WAITING TIME AND TURNAROUND TIME OF EACH PROCESS OUTSIDE ALL QUEUES\n");
-printf("WAITING TIME : %f\n",((sum1+sum3+sum5)/(Count_RR+Count_FF+count_PR));
-printf("TURNAROUND TIME : %f\n",((sum2+sum4+sum6)/(Count_RR+Count_FF+count_PR));
+printf("WAITING TIME : %f\n",(sum1+sum3+sum5)/(Count_RR+Count_FF+Count_PR));
+printf("TURNAROUND TIME : %f\n",(sum2+sum4+sum6)/(Count_RR+Count_FF+Count_PR));
 exit(0);
 }
